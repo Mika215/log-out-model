@@ -1,0 +1,37 @@
+GET http://localhost:9000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDA5NDA0MTMsImV4cCI6MTY0MDk0MDQ2M30.VvhWT3nKdmBOEBPaE-xuu3QIkMOQ6ykA7R3PP-GH3Ps
+###
+POST http://localhost:9000/register
+Content-Type: application/json
+
+{
+    "username": "Wuange",
+    "password": "test1234",
+    "title": "AI",
+    "address": "Shangahai"
+  }
+###
+POST http://localhost:9000/retoken
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiV3VhbmdlIiwiaWF0IjoxNjQwOTQwMjk5fQ.Q84l5ZfSa280KoQgpv7uvyFywAoLjmQv1WobpqmxEHw"
+}
+
+###
+POST http://localhost:9000/login 
+Content-Type: application/json
+
+{
+    "username": "Wuange",
+    "password": "test1234",
+    "title": "AI",
+    "address": "Shangahai"
+  }
+###
+DELETE  http://localhost:9000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiV3VhbmdlIiwiaWF0IjoxNjQwOTQwMjk5fQ.Q84l5ZfSa280KoQgpv7uvyFywAoLjmQv1WobpqmxEHw"
+}
